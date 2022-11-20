@@ -1,15 +1,16 @@
 package Ui;
 
 import javax.swing.*;
-import java.awt.*;
+import java.util.ArrayList;
 
 public class Inicio extends JFrame{
-    private JPanel mainPanel;
-    private JPanel body;
+    private JPanel mainPanel, body;
     private JLabel lblTitulo;
-    private JButton button1;
+    private JButton btnEditar, btnAdd;
+    private String[] datosRelojes;
 
-    public Inicio(){
+    public Inicio(String[] datosRelojes){
+        this.datosRelojes = datosRelojes;
         setVisible(true);
         setSize(500, 300);
         setLocationRelativeTo(null);
@@ -18,8 +19,14 @@ public class Inicio extends JFrame{
         //LAYOUT
         body.setLayout(new BoxLayout(body, BoxLayout.Y_AXIS));
 
-        body.add(new PanelReloj("Europe/Madrid"));
-        body.add(new PanelReloj("America/La_Paz"));
+        imprimirRelojes();
+    }
+
+    private void imprimirRelojes() {
+        for (int i = 0; i < datosRelojes.length; i++) {
+            body.add(new PanelReloj(datosRelojes[i]));
+        }
+
     }
 
 }
