@@ -6,8 +6,10 @@ import java.util.TimeZone;
 
 public class Reloj extends Thread{
     private String zona;
-    public Reloj(String zona) {
+    private JLabel contenedorReloj;
+    public Reloj(JLabel contenedorReloj,String zona) {
         this.zona = zona;
+        this.contenedorReloj = contenedorReloj;
         this.start();
     }
 
@@ -19,9 +21,8 @@ public class Reloj extends Thread{
 
                 String horaActual = calendario.get(Calendar.HOUR_OF_DAY) + ":" +
                         calendario.get(Calendar.MINUTE) + ":" +
-                        calendario.get(Calendar.SECOND);;
-
-                System.out.println(horaActual);
+                        calendario.get(Calendar.SECOND);
+                contenedorReloj.setText(horaActual);
                 Thread.sleep(1000);
             } catch (InterruptedException ex) {
                 System.out.println("Error en el hilo");
