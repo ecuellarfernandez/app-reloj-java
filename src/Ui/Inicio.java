@@ -18,23 +18,8 @@ public class Inicio extends JFrame{
         //LAYOUT
         body.setLayout(new BoxLayout(body, BoxLayout.Y_AXIS));
 
-        JPanel reloj = new JPanel();
-        JPanel reloj2 = new JPanel();
-        JPanel reloj3 = new JPanel();
-        reloj.add(new JLabel("Hola"));
-        reloj.add(new JLabel("Hola"));
-        reloj.add(new JLabel("Hola"));
-        reloj2.add(new JLabel("Hola"));
-        reloj2.add(new JLabel("Hola"));
-        reloj2.add(new JLabel("Hola"));
-        reloj3.add(new JLabel("Hola"));
-        reloj3.add(new JLabel("Hola"));
-        reloj3.add(new JLabel("Hola"));
-
-        body.add(reloj);
-        body.add(reloj2);
-        body.add(reloj3);
-
+        body.add(new PanelReloj("Europe/Madrid"));
+        body.add(new PanelReloj("America/La_Paz"));
     }
 
 }
