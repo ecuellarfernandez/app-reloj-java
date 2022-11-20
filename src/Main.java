@@ -1,7 +1,7 @@
-import Clases.Reloj;
+import Ui.Inicio;
 
 public class Main {
     public static void main(String[] args) {
-        new Reloj("America/La_Paz");
+        new Inicio();
     }
 }
