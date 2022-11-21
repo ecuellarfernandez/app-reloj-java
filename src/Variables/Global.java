@@ -7,6 +7,6 @@ public class Global {
     public static final int anchoVentana = 500;
     public static final int altoVentana = 300;
     public static final int anchoVentanaSec = 350;
-    public static final int altoVentanaSec = 150;
+    public static final int altoVentanaSec = 250;
 
 }
