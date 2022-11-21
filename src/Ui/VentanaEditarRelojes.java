@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 
 public class VentanaEditarRelojes extends JFrame{
     private JComboBox relojes;
-    private JButton btnEliminar, btnAdd;
+    private JButton btnEliminar, btnAdd, btnVolver;
     private JPanel mainPanel;
     private JComboBox selectorZona;
 
@@ -17,10 +17,9 @@ public class VentanaEditarRelojes extends JFrame{
         setVisible(true);
         setLocationRelativeTo(null);
         add(mainPanel);
-        setDefaultCloseOperation(HIDE_ON_CLOSE);
-        
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         cargarRelojes();
-
+        //false
         //Eliminar reloj
         btnEliminar.addActionListener(new ActionListener() {
             @Override
@@ -37,6 +36,13 @@ public class VentanaEditarRelojes extends JFrame{
             }
         });
 
+        btnVolver.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pantallaAnterior.setVisible(true);
+                setVisible(false);
+            }
+        });
     }
 
     //METODOS DE AYUDA
@@ -68,6 +74,6 @@ public class VentanaEditarRelojes extends JFrame{
 
             new Inicio(Global.datosRelojes);
         }
-
     }
+
 }
