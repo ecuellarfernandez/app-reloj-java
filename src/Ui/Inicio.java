@@ -3,15 +3,14 @@ package Ui;
 import Variables.Global;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Inicio extends JFrame{
     private JPanel mainPanel, body;
-    private JButton btnEditar, btnAdd;
+    private JButton btnEditar;
+    private JButton dark, light;
     private ArrayList<String> datosRelojes;
 
     public Inicio(ArrayList<String> datosRelojes){
@@ -27,16 +26,14 @@ public class Inicio extends JFrame{
         body.setLayout(new BoxLayout(body, BoxLayout.Y_AXIS));
 
         imprimirRelojes();
-
-        //Listener para el boton de añadir reloj
-        btnAdd.addActionListener(new ActionListener() {
+        btnEditar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Creo la ventana para añadir reloj
-                //Envío como parámetro la pantalla actual para manipularla en la ventana de añadir reloj
-                new VentanaAddReloj(pantallaInicio);
+                new VentanaEditarRelojes(pantallaInicio);
             }
         });
+
+        //Listener para el boton de añadir reloj
     }
 
     //Imprimir relojes obteniendo los datos del array recibido por parametro

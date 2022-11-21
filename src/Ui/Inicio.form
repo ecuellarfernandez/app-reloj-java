@@ -61,6 +61,8 @@
         <colspec value="fill:d:grow"/>
         <colspec value="left:4dlu:noGrow"/>
         <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <forms/>
@@ -68,14 +70,14 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="2d2eb" class="javax.swing.JButton" binding="btnAdd">
+          <component id="2d2eb" class="javax.swing.JButton" binding="dark">
             <constraints>
-              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
               <forms/>
             </constraints>
             <properties>
-              <label value="Crear"/>
-              <text value="Crear"/>
+              <label value="dark"/>
+              <text value="dark"/>
             </properties>
           </component>
           <hspacer id="8f369">
@@ -91,6 +93,16 @@
             </constraints>
             <properties>
               <text value="Editar"/>
+            </properties>
+          </component>
+          <component id="a5274" class="javax.swing.JButton" binding="light">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <label value="light"/>
+              <text value="light"/>
             </properties>
           </component>
         </children>
