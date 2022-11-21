@@ -7,7 +7,6 @@ import java.awt.*;
 
 public class PanelReloj extends JPanel {
     private String zona;
-    private JPanel contenedorReloj;
     private JLabel lblTitulo, lblReloj;
 
     PanelReloj(String zona){
