@@ -64,8 +64,6 @@ public class Inicio extends JFrame{
         });
     }
 
-
-
     //Imprimir relojes obteniendo los datos del array recibido por parametro
     private void imprimirRelojes() {
         for (int i = 0; i < datosRelojes.size(); i++) {
