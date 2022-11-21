@@ -32,6 +32,7 @@ public class Inicio extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 new VentanaEditarRelojes(pantallaInicio);
+                setVisible(false);
             }
         });
 

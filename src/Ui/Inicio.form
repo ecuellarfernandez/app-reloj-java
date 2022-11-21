@@ -76,8 +76,8 @@
               <forms/>
             </constraints>
             <properties>
-              <label value="dark"/>
-              <text value="dark"/>
+              <label value="Dark"/>
+              <text value="Dark"/>
             </properties>
           </component>
           <hspacer id="8f369">
@@ -101,8 +101,8 @@
               <forms/>
             </constraints>
             <properties>
-              <label value="light"/>
-              <text value="light"/>
+              <label value="Light"/>
+              <text value="Light"/>
             </properties>
           </component>
         </children>
