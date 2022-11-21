@@ -19,7 +19,6 @@ public class VentanaEditarRelojes extends JFrame{
         add(mainPanel);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         cargarRelojes();
-        //false
         //Eliminar reloj
         btnEliminar.addActionListener(new ActionListener() {
             @Override
