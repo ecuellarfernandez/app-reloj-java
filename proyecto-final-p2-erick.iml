@@ -7,5 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="jgoodies-forms-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="flatlaf-2.6" level="project" />
+    <orderEntry type="library" exported="" name="jgoodies-common-1.8.1" level="project" />
   </component>
 </module>
