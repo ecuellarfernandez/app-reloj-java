@@ -36,7 +36,7 @@ Muestra reloj por defecto
   - Parametros: JLabel para actualizar el reloj constantemente en el y String para saber la zona del reloj
   
 - Global
-Variables Globales
+- Variables Globales
   
 
 ### Ejecución
