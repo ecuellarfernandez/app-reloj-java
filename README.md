@@ -19,7 +19,7 @@ Las librerías que utiliza es para añadir nuevas funcionalidades a las ventanas
 ## UML
 ![Uml](https://raw.githubusercontent.com/ecuellarfernandez/app-reloj-java/master/proyecto-final-p2-erick.png)
 
-### Funcionamiendo del programa
+### Funcionamiento del programa
 
 ### Clases
 
