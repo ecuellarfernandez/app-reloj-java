@@ -1,4 +1,7 @@
 # Aplicación de reloj mundial
+![imgp-1](https://user-images.githubusercontent.com/60387528/203387895-5d77356d-09b9-479f-8259-00b3c1737342.PNG)
+![imgp2](https://user-images.githubusercontent.com/60387528/203388590-72cc4da4-9941-4789-9ead-0f9bf58dfdb0.PNG)
+
 
 Inicio de ejecución de programa muestra la hora actual de Bolivia, cuenta con el botón añadir que permite editar los relojes que se muestran en pantalla. Además de eso se puede cambiar el tema a oscuro teniendo predeterminado el claro.
 
