@@ -38,8 +38,8 @@ public class VentanaEditarRelojes extends JFrame{
         btnVolver.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                pantallaAnterior.setVisible(true);
-                setVisible(false);
+                pantallaAnterior.dispose();
+                dispose();
             }
         });
     }
@@ -47,9 +47,9 @@ public class VentanaEditarRelojes extends JFrame{
     //METODOS DE AYUDA
     private void crearNuevoReloj(Inicio pantallaAnterior) {
         //Ocultamos la pantalla de inicio para actualizarla
-        pantallaAnterior.setVisible(false);
+        pantallaAnterior.dispose();
         //Ocultamos la actual
-        setVisible(false);
+        dispose();
         String zonaSelec = selectorZona.getSelectedItem().toString();
         Global.datosRelojes.add(zonaSelec);
 
@@ -65,9 +65,9 @@ public class VentanaEditarRelojes extends JFrame{
     private void eliminarReloj(Inicio pantallaAnterior) {
         if(Global.datosRelojes.size()!=0){
             //Ocultamos la pantalla de inicio para actualizarla
-            pantallaAnterior.setVisible(false);
+            pantallaAnterior.dispose();
             //Ocultamos la actual
-            setVisible(false);
+            dispose();
             String zonaSelec = relojes.getSelectedItem().toString();
             Global.datosRelojes.remove(zonaSelec);
 

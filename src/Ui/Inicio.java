@@ -32,18 +32,17 @@ public class Inicio extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 new VentanaEditarRelojes(pantallaInicio);
-                setVisible(false);
+                pantallaInicio.dispose();
             }
         });
 
         btnLight.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 try {
                     UIManager.setLookAndFeel(new FlatIntelliJLaf());
                     new Inicio(datosRelojes);
-                    setVisible(false);
+                    pantallaInicio.dispose();
                 } catch (UnsupportedLookAndFeelException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -57,7 +56,7 @@ public class Inicio extends JFrame{
                 try {
                     UIManager.setLookAndFeel(new FlatDarculaLaf());
                     new Inicio(datosRelojes);
-                    setVisible(false);
+                    pantallaInicio.dispose();
                 } catch (UnsupportedLookAndFeelException ex) {
                     throw new RuntimeException(ex);
                 }
